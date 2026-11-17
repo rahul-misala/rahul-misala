@@ -1,23 +1,123 @@
-<h1 align="center">Hi 👋, I'm Rahul</h1>
+<div align="center">
 
-## 💫 About Me:
-🔭 I’m currently working on Web3 development & DSA<br>👯 I’m looking to collaborate on Web3 projects & Open Source<br>🤝 I’m looking for help with optimizing smart contract development & advanced DSA techniques<br>🌱 I’m currently learning Data Structures & Algorithms, Web3 technologies<br>💬 Ask me about Web design, Web3, and competitive programming<br>⚡ Fun fact: “Decentralized” sounds cool until you realize there’s no customer support when you mess up. 🚨🙃
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E3263C,100:1a1a2e&height=180&section=header&text=Rahul%20Misala&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Engineer%20%E2%80%A2%20Builder%20of%20ELOFY&descAlignY=60&descSize=16" width="100%"/>
 
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Inter+Tight&weight=600&size=20&pause=1200&color=E3263C&center=true&vCenter=true&width=600&lines=Full-stack+developer+%E2%80%94+React%2C+Next.js%2C+Node.js;Building+ELOFY+%E2%80%94+a+structured+chess+roadmap;500%2B+DSA+problems+solved;Mentored+250%2B+student+developers" alt="Typing SVG" /></a>
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/linkedin.com/in/rahul-misala-20a94524a) 
+<p>
+<a href="https://www.linkedin.com/in/rahul-misala-20a94524a"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://elofychess.com"><img src="https://img.shields.io/badge/ELOFY-E3263C?style=for-the-badge&logo=lichess&logoColor=white"/></a>
+<a href="mailto:rahulmisala416@gmail.com"><img src="https://img.shields.io/badge/Email-1a1a2e?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</p>
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![P5js](https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=FFFFFF) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white) ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=rahul-misala&theme=radical&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=rahul-misala&theme=radical&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=rahul-misala&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+</div>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=rahul-misala&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+---
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=rahul-misala&limit=5&theme=dark&combine_all_yearly_contributions=true)
+### 👋 About me
 
+I'm a **full-stack engineer** from Hyderabad who likes turning ideas into products people actually use.
 
+- 🎓 **B.Tech, Computer Science (Cybersecurity)** — Sreenidhi Institute of Science and Technology, 2026
+- ♟️ Currently building **[ELOFY](https://elofychess.com)** — a structured chess learning roadmap, now in invite-only beta
+- 🧑‍🏫 Former **Technical Lead** at Student Developers Community — mentored **250+ students**, rated **4.8/5** as Lead Mentor
+- 🧠 **500+ DSA problems** solved across LeetCode, Codeforces, CodeChef and HackerRank
+- 🔍 Open to **full-stack, frontend, backend and SDE-1 roles** — Hyderabad or remote
+
+---
+
+### 🚀 Featured work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### ♟️ [ELOFY](https://elofychess.com)
+*Stop guessing what to study.*
+A structured chess curriculum from beginner to advanced — reading modules, interactive board exercises and mastery tracking.
+
+`Next.js` `TypeScript` `PostgreSQL` `Better Auth` `Vercel`
+
+</td>
+<td width="50%" valign="top">
+
+#### 🎬 AlgoVision
+AI-powered generator that turns DSA concepts into animated explainer videos, with async job queues orchestrating the rendering pipeline.
+
+`React` `TypeScript` `Node.js` `Python` `Manim` `FFmpeg`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🏦 [FDXChainge](https://github.com/rahul-misala/FDXChainge)
+NFT marketplace for tokenising and fractionally owning fixed deposits. **Finalist, HackFiniti 2025.**
+
+`React` `Node.js` `Express` `MongoDB` `Solidity`
+
+</td>
+<td width="50%" valign="top">
+
+#### 📝 [Serverless Blogging Platform](https://github.com/rahul-misala/Blogging-website)
+Full-stack blog on the edge with type-safe validation shared between client and server.
+
+`React` `TypeScript` `Cloudflare Workers` `Prisma` `PostgreSQL`
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+#### 🛒 [Creator Commerce](https://github.com/rahul-misala/gumroad)
+E-commerce platform for digital products, built and taught as a live workshop curriculum. `React` `Node.js` `Express` `MongoDB`
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🛠️ Tech stack
+
+<p align="center">
+<b>Languages</b><br/>
+<img src="https://skillicons.dev/icons?i=ts,js,cpp,java,py&theme=dark" />
+</p>
+<p align="center">
+<b>Frontend</b><br/>
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css&theme=dark" />
+</p>
+<p align="center">
+<b>Backend & data</b><br/>
+<img src="https://skillicons.dev/icons?i=nodejs,express,cloudflare,prisma,postgres,mongodb,mysql&theme=dark" />
+</p>
+<p align="center">
+<b>Cloud, DevOps & tools</b><br/>
+<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,githubactions,vercel,git,linux,postman&theme=dark" />
+</p>
+<p align="center">
+<b>Web3</b><br/>
+<img src="https://skillicons.dev/icons?i=solidity&theme=dark" />
+</p>
+
+---
+
+### 📊 GitHub stats
+
+<div align="center">
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=rahul-misala&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1a2e&title_color=E3263C&icon_color=E3263C" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahul-misala&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1a2e&title_color=E3263C" />
+<br/>
+<img src="https://streak-stats.demolab.com?user=rahul-misala&theme=tokyonight&hide_border=true&background=1a1a2e&ring=E3263C&fire=E3263C&currStreakLabel=E3263C" />
+</div>
+
+---
+
+<div align="center">
+
+💬 **Ask me about** React & Next.js, Node.js backends, DSA, or chess improvement
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:E3263C&height=100&section=footer" width="100%"/>
+
+</div>

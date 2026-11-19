@@ -78,7 +78,7 @@ HERO = {
     "first": "Rahul",
     "last": "Misala",
     "line": "I turn ideas into products people use. Now building ELOFY.",
-    "status": "Open to full-stack and SDE-1 roles · Hyderabad or remote",
+    "status": "Open to full-stack, AI, DevOps and SDE roles",
     # Optional: drop a square photo at assets/portrait.png or .jpg and it replaces the board.
     "portrait": next((p for p in [ROOT / "assets/portrait.png", ROOT / "assets/portrait.jpg"] if p.exists()), None),
 }

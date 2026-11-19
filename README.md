@@ -6,9 +6,7 @@
 
 <img src="./cards/activity.svg" width="100%" alt="Contributions per month, streaks and busiest day" />
 
-<a href="https://github.com/rahul-misala?tab=repositories"><img src="./cards/build.svg" width="32.5%" alt="BUILD — products shipped" /></a>
-<a href="https://github.com/rahul-misala/Leetcode-Contests"><img src="./cards/learn.svg" width="32.5%" alt="LEARN — 500+ DSA problems solved" /></a>
-<a href="https://www.linkedin.com/in/rahul-misala-20a94524a"><img src="./cards/teach.svg" width="32.5%" alt="TEACH — 250+ students mentored" /></a>
+<img src="./cards/skills.svg" width="100%" alt="Skills" />
 
 <a href="https://elofychess.com"><img src="./cards/repo-elofy.svg" width="49.5%" alt="ELOFY — structured chess curriculum" /></a>
 <img src="./cards/repo-algovision.svg" width="49.5%" alt="AlgoVision — AI DSA video generator" />

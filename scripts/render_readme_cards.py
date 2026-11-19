@@ -56,6 +56,23 @@ FONT_FILES = {
 }
 
 # ── Content ──────────────────────────────────────────────────────────────────
+SKILLS = [  # group label, skills; rendered as chips in cards/skills.svg
+    ("Languages", ["TypeScript", "JavaScript", "Python", "Java", "C++", "SQL", "Solidity", "Bash"]),
+    ("Frontend", ["React", "Next.js", "Tailwind CSS", "HTML", "CSS", "WebSockets", "WebRTC"]),
+    ("Backend", ["Node.js", "Express", "Bun", "REST APIs", "JWT auth", "Cloudflare Workers", "Serverless",
+                 "Turborepo", "Queues & pub/sub"]),
+    ("Databases & ORM", ["PostgreSQL", "MongoDB", "MySQL", "Prisma", "Drizzle", "Zod"]),
+    ("Cloud & DevOps", ["AWS (EC2, S3, Lambda, RDS, IAM, CloudWatch)", "Docker", "Kubernetes", "CI/CD",
+                        "GitHub Actions", "Vercel", "Infrastructure as code", "Monitoring & observability",
+                        "Reverse proxies", "CDNs & object stores", "Firecracker", "Linux", "Git", "GitHub", "Postman"]),
+    ("AI & LLMs", ["Neural networks", "CNNs", "RNNs/LSTMs", "Attention (KV cache, GQA, MLA)", "Hugging Face", "RAG",
+                   "Vector DBs", "Context engineering", "AI agents", "Agent memory", "Multimodal agents",
+                   "Fine-tuning", "RL fine-tuning", "Evals", "LLM observability", "Manim", "FFmpeg"]),
+    ("CS fundamentals", ["Data structures & algorithms", "OOP", "Design patterns", "System design",
+                         "Distributed systems", "Async processing", "Data pipelines", "Operating systems", "DBMS"]),
+    ("Web3", ["Solidity", "Smart contracts", "NFTs"]),
+]
+
 HERO = {
     "kicker": "HYDERABAD · FULL-STACK ENGINEER",
     "first": "Rahul",
@@ -65,12 +82,6 @@ HERO = {
     # Optional: drop a square photo at assets/portrait.png or .jpg and it replaces the board.
     "portrait": next((p for p in [ROOT / "assets/portrait.png", ROOT / "assets/portrait.jpg"] if p.exists()), None),
 }
-
-TILES = [  # name, colour, number, caption, link (link lives in README.md)
-    {"file": "build", "label": "BUILD", "colour": BLUE, "value": "5", "caption": "products shipped, from NFTs to chess"},
-    {"file": "learn", "label": "LEARN", "colour": YELLOW, "value": "500+", "caption": "DSA problems solved"},
-    {"file": "teach", "label": "TEACH", "colour": RED, "value": "250+", "caption": "students mentored as tech lead"},
-]
 
 REPOS = [  # "repo" pulls stars/language/updated from the JSON when it is public
     {"file": "repo-elofy", "name": "ELOFY", "repo": None,
@@ -88,7 +99,7 @@ REPOS = [  # "repo" pulls stars/language/updated from the JSON when it is public
 ]
 
 # Start time of each card, so the page plays top to bottom.
-T_HERO, T_GRAPH, T_ACTIVITY, T_TILES, T_REPOS = 0.0, 1.1, 2.0, 3.0, 3.9
+T_HERO, T_GRAPH, T_ACTIVITY, T_SKILLS, T_REPOS = 0.0, 1.1, 2.0, 3.0, 5.1
 
 EXTRA_GLYPHS = "→↗·—•↑★"
 
@@ -399,26 +410,37 @@ def activity(st: dict) -> str:
     return svg(W, H, "".join(b), [SERIF, SANS, MONO], "Monthly contributions, streak and busiest day")
 
 
-def tile(t: dict, idx: int) -> str:
-    W, H = 270, 220
-    t0 = T_TILES + idx * .18
-    col = t["colour"]
-    fg = INK if col == YELLOW else "#FFFFFF"
-    b = [f'<defs><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath>'
-         f'<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
-         f'<stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>',
-         f'<g class="a swing fb" {d(t0)}><g clip-path="url(#c)">',
-         f'<rect width="{W}" height="{H}" fill="{col}"/>',
-         f'<circle cx="{W - 34}" cy="34" r="30" fill="none" stroke="{fg}" stroke-width="1.5" class="ring fb" '
-         f'style="animation-delay:{t0 + 1.2:.2f}s"/>',
-         f'<rect x="0" y="0" width="{W * .6:.0f}" height="{H}" fill="url(#g)" class="sweep" style="animation-delay:{t0 + 1.6:.2f}s"/>',
-         f'<text x="26" y="44" class="mono" font-size="12" fill="{fg}">{t["label"]}</text>',
-         f'<g class="nudge" style="animation-delay:{t0 + 1.4:.2f}s"><text x="{W - 26}" y="46" text-anchor="end" class="sans" font-size="22" fill="{fg}">↗</text></g>',
-         count_up(t["value"], 22, 150, "serif", 76, fg, t0 + .5)]
-    for i, ln in enumerate(wrap(t["caption"], SANS, 14, W - 52)):
-        b.append(f'<text x="26" y="{180 + i * 18}" class="sans" font-size="14" fill="{fg}">{escape(ln)}</text>')
-    b.append("</g></g>")
-    return svg(W, H, "".join(b), [SERIF, SANS, MONO], f'{t["label"]}: {t["value"]} {t["caption"]}')
+def skills() -> str:
+    W = 840
+    CX, RIGHT = 184, W - 32             # chips wrap between CX and RIGHT; labels sit left of CX
+    CH, GAP, ROW = 22, 6, 28            # chip height, gap between chips, row pitch
+    STEP, GROUP_GAP = .02, .05          # stagger per chip, extra pause between groups
+    t = T_SKILLS + .1
+    cols = [BLUE, RED, YELLOW]
+    missing = {c for _, items in SKILLS for s in items for c in s if not (" " <= c <= "~" or c in EXTRA_GLYPHS)}
+    assert not missing, f"SKILLS uses glyphs outside the font subset: {missing}"
+    body, y = [], 68
+    for g, (label, items) in enumerate(SKILLS):
+        if g:
+            body.append(f'<line x1="32" y1="{y - 11.5}" x2="{RIGHT}" y2="{y - 11.5}" stroke="{RULE}" class="a fade" {d(t)}/>')
+        body.append(f'<g class="a fade" {d(t)}><rect x="32" y="{y + 9}" width="14" height="4" rx="2" fill="{cols[g % 3]}"/>'
+                    f'<text x="54" y="{y + 15}" class="mono" font-size="10.5" fill="{MUTED}">{escape(label.upper())}</text></g>')
+        x, row_y = CX, y
+        for s in items:
+            w = text_width(s, MONO, 10, .08) + 18
+            if x > CX and x + w > RIGHT:
+                x, row_y = CX, row_y + ROW
+            body.append(f'<g class="a pop fb" {d(t)}><rect x="{x:.1f}" y="{row_y}" width="{w:.1f}" height="{CH}" rx="11" '
+                        f'fill="none" stroke="{RULE}"/><text x="{x + 9:.1f}" y="{row_y + 15}" class="mono" font-size="10" '
+                        f'fill="{INK}">{escape(s)}</text></g>')
+            x += w + GAP
+            t += STEP
+        t += GROUP_GAP
+        y = row_y + CH + 24
+    H = y - 24 + 32
+    b = [frame(W, H), f'<text x="32" y="44" class="mono a fade" font-size="12" fill="{MUTED}" {d(T_SKILLS)}>SKILLS · TOOLS I SHIP WITH</text>']
+    names = ", ".join(s for _, items in SKILLS for s in items)
+    return svg(W, H, "".join(b + body), [MONO], f"Skills: {names}")
 
 
 def repo(r: dict, idx: int, data: dict) -> str:
@@ -456,8 +478,7 @@ def main() -> None:
     st = stats(data["days"])
     OUT.mkdir(exist_ok=True)
     files = {"hero.svg": hero(), "graph.svg": graph(data, st), "activity.svg": activity(st)}
-    for i, t in enumerate(TILES):
-        files[f'{t["file"]}.svg'] = tile(t, i)
+    files["skills.svg"] = skills()
     for i, r in enumerate(REPOS):
         files[f'{r["file"]}.svg'] = repo(r, i, data)
     for name, content in files.items():
